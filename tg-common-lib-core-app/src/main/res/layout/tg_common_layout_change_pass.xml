@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/tg_common_view_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tg_common_layout_change_pass_tilPassOld"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/label_common_pass_change_old"
+            android:importantForAutofill="noExcludeDescendants"
+            android:paddingEnd="@dimen/dp_16"
+            android:paddingStart="@dimen/dp_16"
+            android:paddingTop="@dimen/dp_16"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:counterOverflowTextAppearance="@style/count_over_text"
+            app:counterTextAppearance="@style/count_text">
+
+            <EditText
+                android:id="@+id/tg_common_layout_change_pass_etPassOld"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:digits="@string/ruleAZaz09"
+                android:drawablePadding="@dimen/dp_4"
+                android:drawableStart="@drawable/tg_common_ic_lock_24dp"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tg_common_layout_change_pass_tilPassNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/label_common_pass_change_new"
+            android:importantForAutofill="noExcludeDescendants"
+            android:paddingEnd="@dimen/dp_16"
+            android:paddingStart="@dimen/dp_16"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:counterOverflowTextAppearance="@style/count_over_text"
+            app:counterTextAppearance="@style/count_text">
+
+            <EditText
+                android:id="@+id/tg_common_layout_change_pass_etPassNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:digits="@string/ruleAZaz09"
+                android:drawablePadding="@dimen/dp_4"
+                android:drawableStart="@drawable/tg_common_ic_lock_24dp"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tg_common_layout_change_pass_tilPassAgain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/label_common_pass_change_again"
+            android:importantForAutofill="noExcludeDescendants"
+            android:paddingBottom="@dimen/dp_16"
+            android:paddingEnd="@dimen/dp_16"
+            android:paddingStart="@dimen/dp_16"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:counterOverflowTextAppearance="@style/count_over_text"
+            app:counterTextAppearance="@style/count_text">
+
+            <EditText
+                android:id="@+id/tg_common_layout_change_pass_etPassAgain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:digits="@string/ruleAZaz09"
+                android:drawablePadding="@dimen/dp_4"
+                android:drawableStart="@drawable/tg_common_ic_lock_24dp"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/tg_common_layout_change_pass_btnChangePass"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_16"
+        android:background="@drawable/tg_common_btn_blue_style"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/but_common_pass_change"
+        android:textColor="#FFFFFFFF"
+        android:textSize="@dimen/sp_18" />
+</LinearLayout>

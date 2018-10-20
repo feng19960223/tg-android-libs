@@ -1,0 +1,29 @@
+// 定义变量
+ext {
+    // 基本配置
+    configInfo = [
+            // 基本信息
+            baseName          : "tg-common-lib-things", // baseName
+            fullName          : "tg-common-lib-things", // 全称
+            shortName         : "tg-common-lib-things", // 简称
+            versionCode       : 1, // App应用内部版本号
+            versionName       : "20180901-1 ", // App应用的版本每次，用户可以看到，就是我们发布的版本
+            // maven信息
+            pomGroupId        : "com.turingoal", // groupId
+            repoType          : "remote", // remote发布到远程仓库 。local发布到本地仓库，方便调试，避免调试期间频繁上传到maven仓库
+            localRepositoryUrl: "file://E://turingoal//repo/",
+            serverlHost       : "47.94.19.152:8081", // maven 服务器
+            // 开发环境
+            compileSdkVersion : 28, // 编译所依赖的Android SDK的版本
+            buildToolsVersion : "28.0.2", // 构建该Android工程所用构建工具的版本
+            minSdkVersion     : 21, // 最低支持的Android系统的API Level，Android5.0
+            targetSdkVersion  : 28, // 基于哪个版本开发的
+            // 签名
+            signStorePassword : "tg12345678abc", // 签名证书文件的密码
+            signKeyAlias      : "tgBtsWps", // 签名证书中秘钥别名
+            signKeyPassword   : "Tg12345678abc" // 签名证书中该秘钥的密码
+    ]
+    // 依赖库版本
+    libVersions = [
+    ]
+}

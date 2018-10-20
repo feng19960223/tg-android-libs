@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/tg_common_view_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/tg_common_layout_about_ivLogo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:src="@drawable/tg_common_ic_blank" />
+
+        <ImageView
+            android:id="@+id/tg_common_layout_about_ivTitleLogo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:src="@drawable/tg_common_ic_blank" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_16"
+                android:text="@string/label_common_about_version"
+                android:textColor="#43596B"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tg_common_layout_about_tvVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:text="@string/default_common_blank"
+                android:textColor="#617B8F"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:background="#D8D8D8" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_16"
+                android:text="@string/label_common_about_website"
+                android:textColor="#43596B"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tg_common_layout_about_tvContactWebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:text="@string/default_common_about_contact_website"
+                android:textColor="#617B8F"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:background="#D8D8D8" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlTel"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_16"
+                android:text="@string/label_common_about_tel"
+                android:textColor="#43596B"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tg_common_layout_about_tvContactTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:text="@string/default_common_about_contact_tel"
+                android:textColor="#617B8F"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:background="#D8D8D8" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_16"
+                android:text="@string/label_common_about_address"
+                android:textColor="#43596B"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tg_common_layout_about_tvContactAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:text="@string/default_common_about_contact_address"
+                android:textColor="#617B8F"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:background="#D8D8D8" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tg_common_layout_about_tvContactName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal|bottom"
+        android:text="@string/default_common_about_contact_name"
+        android:textColor="@color/grey" />
+</LinearLayout>

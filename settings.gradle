@@ -1,0 +1,1 @@
+include ':app', ':tg-common-lib-core-app', ':tg-bts-common-lib-app', ':tg-mengbao-common-app', ':tg-common-lib-things'

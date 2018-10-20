@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@color/colorPrimary">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/tg_common_view_title_bar_ivLeftBut"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp_8"
+            android:src="@drawable/tg_common_ic_back_white_24dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tg_common_view_title_bar_tvLeftText"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/but_common_back"
+            android:textColor="#FFFFFFFF"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tg_common_view_title_bar_tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/default_common_blank"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/tg_common_view_title_bar_ivRightBut"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:padding="@dimen/dp_12"
+            android:src="@drawable/tg_common_ic_add_white_24dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tg_common_view_title_bar_tvRightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:background="@drawable/tg_common_selector_bar_btn"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_16"
+            android:paddingStart="@dimen/dp_16"
+            android:paddingTop="@dimen/dp_8"
+            android:text="@string/default_common_blank"
+            android:textColor="@android:color/white"
+            android:visibility="invisible" />
+    </FrameLayout>
+</FrameLayout>

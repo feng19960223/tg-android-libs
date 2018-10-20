@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TgTitleContextLinearLayout">
+        <attr name="titleTextStr" format="string" />
+        <attr name="contextTextStr" format="string" />
+    </declare-styleable>
+</resources>

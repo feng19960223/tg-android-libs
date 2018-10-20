@@ -1,0 +1,88 @@
+<resources>
+    <!--title-->
+    <string name="title_common_home">首页</string>
+    <string name="title_common_help">系统帮助</string>
+    <string name="title_common_about">关于系统</string>
+    <string name="title_common_login">登录</string>
+    <string name="title_common_self_info">个人信息</string>
+    <string name="title_common_pass_change">修改密码</string>
+    <string name="title_common_pass_reset">重置密码</string>
+    <string name="title_common_admin_login">管理员登录</string>
+    <string name="title_common_admin_config">管理员配置</string>
+    <!--弹出选择框的提示选择语-->
+    <string name="title_common_hint_select">请选择</string>
+    <string name="title_common_hint_hint">提示</string>
+    <!--数据-->
+    <string name="default_common_blank"></string>
+    <string name="default_common_test">测试数据</string>
+    <string name="hint_common_noData">没有数据~</string>
+    <string name="hint_common_error">出错了~</string>
+    <string name="hint_common_load">加载中~</string>
+    <string name="hint_common_error_reload">加载失败，点击重试</string>
+    <!--再按一次退出程序-->
+    <string name="hint_common_double_click_exit">再按一次退出程序</string>
+    <!-- 操作-->
+    <string name="but_common_yes">是</string>
+    <string name="but_common_no">否</string>
+    <string name="but_common_confirm_yes">确定</string>
+    <string name="but_common_confirm_cancel">取消</string>
+    <string name="but_common_delete">删除</string>
+    <string name="but_common_update">更新</string>
+    <string name="but_common_save">保存</string>
+    <string name="but_common_complete">完成</string>
+    <string name="but_common_back">返回</string>
+    <string name="but_common_reset">重置</string>
+    <!--登录、注销、退出-->
+    <string name="label_common_login_account">账号</string>
+    <string name="label_common_login_username">用户名</string>
+    <string name="label_common_login_password">密码</string>
+    <string name="but_common_login">登录</string>
+    <string name="hint_common_login_username_max">用户名最长30个字符！</string>
+    <string name="hint_common_login_password_max">密码的最长30个字符！</string>
+    <string name="hint_common_login_username_min">用户名最少3个字符！</string>
+    <string name="hint_common_login_password_min">密码最少6个字符！</string>
+    <string name="hint_common_login_username_null">请输入用户名！</string>
+    <string name="hint_common_login_password_null">请输入密码！</string>
+    <string name="hint_common_login_username_password_error">用户名或密码不正确！</string>
+    <string name="hint_common_login_token_expired">登录信息已过期，请重新登录！</string>
+    <string name="but_common_logoff">注销登录</string>
+    <string name="but_common_logoff_short">注销</string>
+    <string name="but_common_logout">退出系统</string>
+    <string name="but_common_logout_short">退出</string>
+    <!--修改密码-->
+    <string name="but_common_pass_change">修改密码</string>
+    <string name="but_common_pass_reset">重置密码</string>
+    <string name="label_common_pass_change_old">旧密码</string>
+    <string name="label_common_pass_change_new">新密码</string>
+    <string name="label_common_pass_change_again">确认密码</string>
+    <string name="hint_common_pass_change_max">密码最长30个字符！</string>
+    <string name="hint_common_pass_change_min">密码最少6个字符！</string>
+    <string name="hint_common_pass_change_null">请输入密码！</string>
+    <string name="hint_common_pass_change_different">两次输入的密码不一致！</string>
+    <string name="hint_common_pass_change_error">旧密码不正确！</string>
+    <string name="hint_common_pass_change_success">密码修改成功，请重新登录！</string>
+    <!--关于系统-->
+    <string name="label_common_about_version">版本</string>
+    <string name="label_common_about_website">网站</string>
+    <string name="label_common_about_tel">电话</string>
+    <string name="label_common_about_address">地址</string>
+    <string name="default_common_about_contact_website">www.turingoal.com</string>
+    <string name="default_common_about_contact_tel">010-89942808</string>
+    <string name="default_common_about_contact_address">北京昌平回龙观西大街东亚上北中心</string>
+    <string name="default_common_about_contact_name">图灵谷（北京）科技有限公司</string>
+    <!--个人信息-->
+    <string name="label_common_user_account">账号</string>
+    <string name="label_common_user_username">用户名</string>
+    <string name="label_common_user_realname">姓名</string>
+    <string name="label_common_user_code_num">工号</string>
+    <string name="label_common_user_gender">性别</string>
+    <string name="label_common_user_age">年龄</string>
+    <string name="label_common_user_birthday">生日</string>
+    <!--管理员-->
+    <string name="hint_common_admin_login_pass">管理员密码</string>
+    <string name="hint_common_admin_login">输入管理员密码，进行系统配置！</string>
+    <!--EditText可以输入的字符-->
+    <string name="ruleAZaz09">0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM</string>
+    <string name="rule09">0123456789</string>
+    <string name="ruleMail">0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM@.</string>
+</resources>

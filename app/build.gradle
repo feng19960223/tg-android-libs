@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 28 // 编译所依赖的Android SDK的版本
+    buildToolsVersion "28.0.2" // 构建该Android工程所用构建工具的版本
+    defaultConfig {
+        applicationId "libs.android.turingoal.com.tg_android_libs"
+        minSdkVersion 27
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // lombok需要添加该行
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+    }
+    buildTypes {
+        release {
+            debuggable false
+            jniDebuggable false
+            // signingConfig signingConfigs.release // 签名
+            zipAlignEnabled true // Zipalign优化
+            shrinkResources false // 移除无用的resource
+            minifyEnabled true // 开启混淆,我们新建的工程默认为false，因此，如果我们需要开启混淆的话就需要手动设为true。
+            // 这部分有两段，前一段代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明，免去了我们很多事，这个文件的目录在/tools/proguard/proguard-android.txt , 后一部分是我们项目里的自定义的混淆文件，目录就在 app/proguard-rules.pro,在这个文件里我们可以声明一些我们所需要的定制的混淆规则。
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':tg-common-lib-core-app')
+    implementation project(':tg-bts-common-lib-app')
+    implementation project(':tg-mengbao-common-app')
+}

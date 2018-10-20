@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+apply plugin: "maven"
+apply from: "config.gradle" // 引入config.gradle
+android {
+    compileSdkVersion configInfo.compileSdkVersion // 编译所依赖的Android SDK的版本
+    buildToolsVersion configInfo.buildToolsVersion // 构建该Android工程所用构建工具的版本
+    defaultConfig {
+        applicationId "libs.android.turingoal.com.tg_common_lib_things"
+        minSdkVersion configInfo.minSdkVersion // 最低支持的Android系统的API Level，Android5.0
+        targetSdkVersion configInfo.targetSdkVersion // 基于哪个版本开发的
+        versionCode configInfo.versionCode // App应用内部版本号
+        versionName configInfo.versionName // App应用的版本每次，用户可以看到，就是我们发布的版本
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly 'com.google.android.things:androidthings:+'
+}
